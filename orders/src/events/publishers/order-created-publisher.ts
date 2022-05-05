@@ -1,0 +1,5 @@
+import { Publisher, OrderCreatedEvent, Subjects } from "@lg4tickets/common";
+
+export class OrderCreatedPublisher extends Publisher<OrderCreatedEvent> {
+    subject: Subjects.OrderCreated = Subjects.OrderCreated;
+}
